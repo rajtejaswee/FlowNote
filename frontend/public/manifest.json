@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Flownote - Inline Mini Chat",
+    "version": "1.0.0",
+    "description": "Add quick, inline mini-chat notes to any website.",
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "permissions": [],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["src/content/index.tsx"],
+        "css": ["src/styles/chat.css"]
+      }
+    ]
+  }
+  
